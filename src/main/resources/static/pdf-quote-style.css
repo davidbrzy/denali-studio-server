@@ -1,0 +1,352 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter-regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter-medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter-semibold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter-bold.ttf");
+    font-weight: 700;
+}
+
+@page {
+    margin: 60px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+}
+
+h2 + div.cards-section,
+h3 + div.cards-section,
+h4 + div.cards-section {
+    page-break-before: avoid;
+}
+
+.cards-section {
+    page-break-inside: avoid;
+    -fs-page-break-min-height: 50%;
+}
+
+.heading-with-table {
+    page-break-inside: avoid;
+}
+
+img#logo {
+    width: 200px;
+    height: auto;
+    margin: 0 8px 32px 8px;
+}
+
+h3#subtitle {
+    padding: 0 8px;
+    margin-bottom: 6px;
+    color: #344054;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+}
+
+h1#title {
+    margin-bottom: 24px;
+    padding: 0 8px;
+    color: #000;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46.8px;
+}
+
+p#subtitle {
+    color: #344054;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+    color: #000;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36.4px;
+    margin: 24px 0 16px 0;
+    padding: 0 8px;
+}
+
+h3 {
+    color: #000;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31.2px;
+    margin: 18px 0 16px 0;
+    padding: 0 8px;
+}
+
+p {
+    color: #0a0a0a;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+ul,
+ol {
+    padding-left: 32px;
+}
+
+p a,
+li a {
+    color: #1570ef;
+}
+
+table.cards {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px;
+    table-layout: fixed;
+    page-break-inside: avoid;
+    -fs-table-paginate: avoid;
+}
+
+table.cards tr {
+    page-break-inside: avoid;
+}
+
+table.cards td {
+    width: 33.33%;
+    height: inherit;
+}
+
+table.cards td.card {
+    padding: 16px;
+    background: #f9fafb;
+    border-radius: 9.6px;
+}
+
+table.cards td.card div.card-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+table.cards td.card div.card-content div.icon {
+    display: table-row;
+    height: 28px;
+    fill: #1570ef;
+}
+
+table.cards td.card div.card-content div.text {
+    height: 78px;
+    display: flex;
+    align-items: flex-end;
+}
+
+table.cards td.card div.card-content p {
+    margin-bottom: 0;
+    padding: 0;
+    color: #0a0a0a;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+table.item-cards {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px;
+    table-layout: fixed;
+    page-break-inside: avoid;
+    -fs-table-paginate: avoid;
+}
+
+table.item-cards tr {
+    page-break-inside: avoid;
+}
+
+table.item-cards td {
+    width: 50%;
+    height: inherit;
+}
+
+table.item-cards td.item-card {
+    padding: 24px;
+    border: 1px solid #e4e7ec;
+    background: #f9fafb;
+    border-radius: 9.6px;
+}
+
+table.item-cards td div.icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 16px;
+    fill: #1570ef;
+}
+
+table.item-cards td h4.heading {
+    margin-bottom: 8px;
+    color: #0a0a0a;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+table.item-cards td p.text {
+    margin-bottom: 8px;
+    padding: 0;
+    color: #475476;
+}
+
+table.item-cards td p.price {
+    margin: 0;
+    padding: 0;
+    color: #1570ef;
+    font-weight: 500;
+}
+
+table.pricing {
+    page-break-inside: avoid;
+    -fs-table-paginate: avoid;
+}
+
+td.price-box {
+    width: 40%;
+    vertical-align: top;
+}
+
+td.price-box div.wrapper {
+    padding: 18px;
+    border: 1px solid #e4e7ec;
+    border-radius: 13.6px;
+    background: #f9fafb;
+}
+
+td.price-box p.price {
+    color: #344054;
+    font-weight: 500;
+}
+
+td.price-box div p {
+    color: #475476;
+}
+
+td.price-box div p:last-child {
+    margin-bottom: 0;
+}
+
+td.price-content {
+    width: 60%;
+    vertical-align: top;
+    padding: 0 0 0 20px;
+}
+
+td.price-content h4 {
+    margin: 0 0 12px 0;
+    color: #344054;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+}
+
+td.price-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+td.price-content ul li {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 0 12px 0;
+    padding-left: 10px;
+    color: #344054;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+}
+
+td.price-content ul li::before {
+    content: "- ";
+    position: absolute;
+    left: -10px;
+    color: #344054;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+table.contacts {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px;
+    table-layout: fixed;
+    page-break-inside: avoid;
+    -fs-table-paginate: avoid;
+}
+
+table.contacts tr {
+    page-break-inside: avoid;
+}
+
+table.contacts td {
+    width: 33.33%;
+}
+
+table.contacts td.contact {
+    padding: 18px;
+    border-radius: 13.6px;
+    background: #f9fafb;
+}
+
+table.contacts td h4 {
+    color: #344054;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20.8px;
+}
+
+table.contacts td p.position {
+    margin: 8px 0;
+    padding: 0;
+    color: #667085;
+    font-size: 16px;
+}
+
+table.contacts td p.link {
+    margin: 4px 0 0 0;
+    padding: 0;
+    color: #1570ef;
+    font-weight: 500;
+}
+
+table.contacts td p.link a {
+    color: inherit;
+    text-decoration: none;
+}
